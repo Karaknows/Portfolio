@@ -20,9 +20,9 @@
 
 		<nav class="navbar" data-navbar>
 
-			<div class="navbar-top">
+			<div class="navbar-top"> 
 				<a href="#" class="logo">
-					<img src="icon.png" width="54" height="24" alt="Karylle home">
+					<img src="./assets/images/logo-light.svg" width="64" height="24" alt="Karylle home">
 				</a>
 
 				<button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
@@ -98,9 +98,185 @@
 					<img src="image.png" alt="">
 				</div>
 				<div class="content">
-					<h1 class="">
+					<h1 class="h2" data-reveal data-reveal-delay="0.5s"> Hey I'm <span> Karylle </span> </h1>
+					<div class="typewriter h1" data-reveal data-reveal-delay="0.5s"> I'm a <span></span> </div>
+					<p class="section-text" data-reveal data-reveal-delay="0.9s"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sapien orci, convallis id mauris et, efficitur hendrerit enim. </p>
+					<div class="social-links" data-reveal data-reveal-delay="1.1s">
+						<a href="#"> <i class="fa-brands fa-github"> </i> </a>
+						<a href="#"> <i class="fa-brands fa-facebook"> </i> </a>
+						<a href="#"> <i class="fa-brands fa-linkedin"> </i> </a>
+						<a href="#"> <i class="fa-brands fa-twitter"> </i> </a>
+					</div>
+					<div data-reveal data-reveal-delay="1.3s">
+						<button> Download CV </button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!---
+			#ABOUT
+		--->
+
+		<section class="section about" aria-label="about" id="about">
+			<div class="container">
+
+				<div class="wrapper">
+
+					<div data-reveal="left">
+						<h2 class="h2 section-title"> What I Do? </h2>
+
+						<p class="section-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sapien orci, convallis id mauris et, efficitur hendrerit enim. </p>
+					</div>
+
+					<ul class="progress-list" data-reveal="right">
+
+						<li class="progress-item">
+
+							<div class="label-wrapper">
+								<p> Web Design </p>
+
+								<span class="span"> 100 % </span>
+							</div>
+
+							<div class="progress">
+								<div class="progress-fill" style="width: 100%; background-color: #c7b1dd"> </div>
+							</div>
+
+						</li>
+
+						<li class="progress-item">
+
+							<div class="label-wrapper">
+								<p> Mobile Design </p>
+
+								<span class="span"> 80 % </span>
+							</div>
+
+							<div class="progress">
+								<div class="progress-fill" style="width: 80%; background-color: #8caeec"> </div>
+							</div>
+
+						</li>
+
+						<li class="progress-item">
+
+							<div class="label-wrapper">
+								<p> Development </p>
+
+								<span class="span"> 85 % </span>
+							</div>
+
+							<div class="progress">
+								<div class="progress-fill" style="width: 85%; background-color: #b0d4c1"> </div>
+							</div>
+
+						</li> 
+
+						<li class="progress-item">
+
+							<div class="label-wrapper">
+								<p> SEO </p>
+
+								<span class="span"> 90 % </span>
+							</div>
+
+							<div class="progress">
+								<div class="progress-fill" style="width: 90%; background-color: #e3a6b6"> </div>
+							</div>
+
+						</li>
+
+					</ul>
+
+				</div>
+
+				<ul class="grid-list">
+
+					<li data-reveal="bottom">
+						<div class="about-card">
+
+							<div class="card-icon">
+								<img src="./assets/images/icon-1.svg" width="52" height="52" loading="lazy" alt="web design icon">
+							</div>
+
+							<h3 class="h4 card-title"> Web Design </h3>
+
+							<p class="card-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sapien orci, convallis id mauris et, efficitur hendrerit enim. </p>
+
+						</div>
+					</li>
+
+					<li data-reveal="bottom" data-reveal-delay="0.25s">
+						<div class="about-card">
+
+							<div class="card-icon">
+								<img src="./assets/images/icon-2.svg" width="52" height="52" loading="lazy" alt="mobile design icon">
+							</div>
+
+							<h3 class="h4 card-title"> Mobile Design </h3>
+
+							<p class="card-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sapien orci, convallis id mauris et, efficitur hendrerit enim. </p>
+
+						</div>
+					</li>
+
+					<li data-reveal="bottom" data-reveal-delay="0.5s">
+						<div class="about-card">
+
+							<div class="card-icon">
+								<img src="./assets/images/icon-3.svg" width="52" height="52" loading="lazy" alt="web development icon">
+							</div>
+
+							<h3 class="h4 card-title"> Development </h3>
+
+							<p class="card-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sapien orci, convallis id mauris et, efficitur hendrerit enim. </p>
+
+						</div>
+					</li>  
+
+					<li data-reveal="bottom" data-reveal-delay="0.75s">
+						<div class="about-card">
+
+							<div class="card-icon">
+								<img src="./assets/images/icon-3.svg" width="52" height="52" loading="lazy" alt="web seo icon">
+							</div>
+
+							<h3 class="h4 card-title"> SEO </h3>
+
+							<p class="card-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sapien orci, convallis id mauris et, efficitur hendrerit enim. </p>
+
+						</div>
+					</li>  
+
+				</ul>
+
+			</div>
+
+		</section>
+
+		<!---
+			#PROJECT
+		--->
+
+		<section class="section project" aria-labelledby="project-label" id="project">
+			<div class="container">
+
+				<div class="title-wrapper" data-reveal="top">
+
+					<div>
+						<h2 class="h2 section-title"> What I Do? </h2>
+
+						<p class="section-text"> orem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sapien orci, convallis id mauris et, efficitur hendrerit enim. </p>
+
+					</div>
 
 
+
+
+
+
+ 
 
 	
 	
