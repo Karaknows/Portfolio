@@ -727,3 +727,107 @@ textarea.input-field {
 .footer .social-link {
 	color: var(--charcoal);
 }
+
+
+/*----------------------------------------------*\
+	#MEDIA QUERIES
+\*----------------------------------------------*/
+
+
+/**
+ * Responsive for larger than 575px screen
+ */
+
+
+ @media (min-width: 575px) {
+ 	/**
+	 * REUSED STYLE
+ 	 */
+
+ 	.container {
+ 		max-width: 540px;
+ 		width: 100%;
+ 		margin-inline: auto;
+ 	}
+
+ 	/**
+	 * PROJECT
+ 	 */
+
+ 	 .project-card {
+ 	 	--padding: 68px;
+ 	 }
+
+ 	 /**
+	 * CONTACT
+ 	 */
+
+ 	 .contact-card {
+ 	 	padding: 68px;
+ 	 }
+
+ }
+ 
+
+ /**
+ * Responsive for larger than 768px screen
+ */
+
+
+@media (min-width: 768px); {
+	/**
+	 * REUSED STYLE
+ 	 *//    
+
+ 	 .container {
+ 	 	max-width: 720px;
+ 	 }
+
+ 	 .section-text {
+ 	 	--fs-5: 2rem;
+ 	 }
+
+ 	 /**
+	 * ABOUT
+ 	 */
+
+ 	 .about .grid-list {
+ 	 	grid-template-columns: 1fr 1fr;
+ 	 }
+
+ 	 /**
+	 * PROJECT
+ 	 */
+
+ 	 .project .title-wrapper {
+ 	 	display: flex;
+ 	 	justify-content: space-between;
+ 	 	align-items: center;
+ 	 	gap: 30px;
+ 	 }
+
+ 	 .project .btn {
+ 	 	min-width: max-content;
+ 	 }
+
+ 	 /**
+	 * CONTACT
+ 	 */
+
+ 	 .contant .section-text {
+ 	 	--fs-5: 1.8rem;
+ 	 }
+
+ 	 .input-wrapper {
+ 	 	display: flex;
+ 	 	align-items: center;
+ 	 	gap: 20px;
+ 	 }
+
+ 	 /**
+	 * FOOTER
+ 	 */
+
+
+
+} 
