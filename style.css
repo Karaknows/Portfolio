@@ -239,7 +239,7 @@ body.nav-active {
 }
 
 [data-reveal] {
-	opacity: 1; 
+	opacity: 0; 
 	transition: 0.75s ease;
 }
 
@@ -846,6 +846,7 @@ textarea.input-field {
  * Responsive for larger than 992px screen
  */
 
+
  @media (min-width: 992px) {
 
  	/**
@@ -861,11 +862,11 @@ textarea.input-field {
  	--section-padding: 120px;
  	}
 
- }
 
  	/**
 	 * REUSED STYLE
  	 */
+
 
  	 .container {
  	 	max-width: 960px;
@@ -900,7 +901,7 @@ textarea.input-field {
  	 	transition: var(--transition-1);
  	 }
 
- 	 .navbar-link:is(:hover, :focus-visible) {
+ 	 .navbar-link:is(:hover, focus-visible) {
  	 	color: var(--cinnamon-satin);
  	 } 
 
@@ -913,7 +914,7 @@ textarea.input-field {
  	 	top: 45px;
  	 	max-width: 960px;
  	 	left: 50%;
- 	 	transform: translateY(-50%);
+ 	 	transform: translateX(-50%);
  	 	padding-inline: 16px;
  	 	border-radius: var(--radius-8);
  	 	background: linear-gradient(to right, rgb(254, 215, 173) 60%, rgb(248, 183, 113));
@@ -980,5 +981,102 @@ textarea.input-field {
 
  	 .contact-card {
  	 	grid-template-columns: 0.8fr 1fr;
+ 	 	align-items: center;
+ 	 	gap: 90px;
  	 }
+ }
+
+
+ /**
+ * Responsive for larger than 1200px screen
+ */
+
+
+ @media (min-width: 1200px) {
+
+
+ 	 /**
+	 * REUSED STYLE
+ 	 */
+
+
+ 	 .container,
+ 	 .header {
+ 	 	max-width: 1140px;
+ 	 }
+
+
+ 	 /**
+	 * ABOUT 
+ 	 */
+
+
+ 	 .about .grid-list {
+ 	 	gap: 50px;
+ 	 }
+
+
+ 	 /**
+	 * CONTACT 
+ 	 */
+
+
+ 	 .contact-card {
+ 	 	gap: 150px;
+ 	 }
+
+ }
+
+
+ /**
+ * Responsive for larger than 1400px screen
+ */
+
+
+ @media (min-width: 1400px) {
+
+
+ 	/**
+	 * REUSED STYLE
+ 	 */
+
+
+ 	 .container,
+ 	 .header {
+ 	 	max-width: 1320px;
+ 	 }
+
+
+ 	 /**
+	 * ABOUT 
+ 	 */
+
+ 	 .about .wrapper {
+ 	 	gap: 100px;
+ 	 }
+
+ 	 .about .grid-list {
+ 	 	gap: 60px;
+ 	 }
+
+ }
+
+  [data-reveal] {
+  	opacity: 0;
+  	transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  }
+
+  .image {
+  	transform: translateX(-100px);
+  }
+
+  .content > * {
+  	transform: translateX(100px);
+  }
+
+  .revealed {
+  	opacity: 1;
+  	transform: translateX(0);
+  }
+
 
