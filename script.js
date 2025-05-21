@@ -1,5 +1,6 @@
 // HEADER
 // Select the header element
+
 const header = document.querySelector('.header');
 
 // Function to handle scroll event
@@ -19,6 +20,28 @@ const element = document.querySelector('[data-reveal]');
 element.classList.add('visible');
 
 
+//MENU
+
+// Select the necessary elements
+const navOpenBtn = document.querySelector('.nav-open-btn');
+const navCloseBtn = document.querySelector('.nav-close-btn');
+const navbar = document.querySelector('.navbar');
+const overlay = document.querySelector('.overlay');
+// Function to open the menu
+navOpenBtn.addEventListener('click', () => {
+    navbar.classList.add('active'); // Show the navbar
+    overlay.classList.add('active'); // Show the overlay
+});
+// Function to close the menu
+navCloseBtn.addEventListener('click', () => {
+    navbar.classList.remove('active'); // Hide the navbar
+    overlay.classList.remove('active'); // Hide the overlay
+});
+// Optional: Close the menu when clicking on the overlay
+overlay.addEventListener('click', () => {
+    navbar.classList.remove('active'); // Hide the navbar
+    overlay.classList.remove('active'); // Hide the overlay
+});
 
 
 // DATA REVEAL

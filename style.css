@@ -16,6 +16,7 @@
 	--raisin-black_a6: hsla(216, 14%, 14%, 0.06);
 	--gunmetal: hsla(214, 15%, 21%, 1);
 	--charcoal: hsla(219, 22%, 26%, 1);
+	--fun-green: hsl(143, 94, 25);
 
 	/**
 	* typography
@@ -285,7 +286,7 @@ body.nav-active {
 	top: 0; /* Ensures fixed header sticks to top */
 	left: 0;
 	width: 100%;
-	background-color: #ecd6c3;
+	background: linear-gradient(to right, rgb(254, 215, 173) 60%, rgb(248, 183, 113));
 	z-index: 1000; /* higher to overlay other elements if needed */
 	animation: slideIn 0.5s ease forwards;
 }
@@ -739,7 +740,7 @@ textarea.input-field {
  */
 
 
- @media (min-width: 575px) {
+ @media (min-width: 320px) {
 
  	/**
 	 * REUSED STYLE
@@ -750,6 +751,15 @@ textarea.input-field {
  		width: 100%;
  		margin-inline: auto;
  	}
+
+ 	/**
+	 * HEADER
+ 	 */
+
+ 	 .nav-close-btn {
+ 	 	color: var(--white);
+ 	 	font-size: 3vh;
+ 	 }
 
  	/**
 	 * PROJECT
@@ -768,17 +778,18 @@ textarea.input-field {
  	 }
 
  }
- 
 
- /**
+
+
+/**
  * Responsive for larger than 768px screen
  */
 
 
-@media (min-width: 768px); {
+ @media (min-width: 768px) {
 	/**
 	 * REUSED STYLE
- 	 *//    
+ 	 */   
 
  	 .container {
  	 	max-width: 720px;
@@ -787,6 +798,17 @@ textarea.input-field {
  	 .section-text {
  	 	--fs-5: 2rem;
  	 }
+
+
+ 	 /**
+	 * HEADER
+ 	 */
+
+ 	 .nav-close-btn {
+ 	 	color: var(--white);
+ 	 	font-size: 3vh;
+ 	 }
+
 
  	 /**
 	 * ABOUT
@@ -985,9 +1007,60 @@ textarea.input-field {
  	 	gap: 90px;
  	 }
  }
+ 
+
+/**
+ * Responsive for larger than 1400px screen
+ */
 
 
- /**
+ @media (min-width: 1400px) {
+
+
+ 	/**
+	 * REUSED STYLE
+ 	 */
+
+
+ 	 .container,
+ 	 .header {
+ 	 	max-width: 1320px;
+ 	 }
+
+ 	 /**
+	 * ABOUT 
+ 	 */
+
+ 	 .about .wrapper {
+ 	 	gap: 100px;
+ 	 }
+
+ 	 .about .grid-list {
+ 	 	gap: 60px;
+ 	 }
+
+ }
+
+  [data-reveal] {
+  	opacity: 0;
+  	transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  }
+
+  .image {
+  	transform: translateX(-100px);
+  }
+
+  .content > * {
+  	transform: translateX(100px);
+  }
+
+  .revealed {
+  	opacity: 1;
+  	transform: translateX(0);
+  }
+
+
+/**
  * Responsive for larger than 1200px screen
  */
 
@@ -1028,55 +1101,12 @@ textarea.input-field {
  }
 
 
- /**
- * Responsive for larger than 1400px screen
- */
 
 
- @media (min-width: 1400px) {
+
+ 
 
 
- 	/**
-	 * REUSED STYLE
- 	 */
-
-
- 	 .container,
- 	 .header {
- 	 	max-width: 1320px;
- 	 }
-
-
- 	 /**
-	 * ABOUT 
- 	 */
-
- 	 .about .wrapper {
- 	 	gap: 100px;
- 	 }
-
- 	 .about .grid-list {
- 	 	gap: 60px;
- 	 }
-
- }
-
-  [data-reveal] {
-  	opacity: 0;
-  	transition: transform 1s ease-in-out, opacity 1s ease-in-out;
-  }
-
-  .image {
-  	transform: translateX(-100px);
-  }
-
-  .content > * {
-  	transform: translateX(100px);
-  }
-
-  .revealed {
-  	opacity: 1;
-  	transform: translateX(0);
-  }
+ 
 
 
