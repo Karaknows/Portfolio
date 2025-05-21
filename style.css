@@ -484,14 +484,17 @@ body.nav-active {
 }
 
 @keyframes words {
-	0%, 33% {
-		content: "Hamburger";
+	0%, 25% {
+		content: "Restaurant";
 	}
-	34%, 66% {
+	26%, 50% {
 		content: "Supermarket";
 	}
-	67%, 100% {
+	51%, 75% {
 		content: "Drugstore"
+	}
+	76%, 100% {
+		content: "Convenience Store"
 	}
 }
 
@@ -767,6 +770,10 @@ textarea.input-field {
  		margin-inline: auto;
  	}
 
+ 	.typewriter {
+ 		font-size: 32px;
+ 	}
+
  	/**
 	 * HEADER
  	 */
@@ -784,6 +791,15 @@ textarea.input-field {
  	 	color: var(--white);
  	 	font-size: 3vh;
  	 }
+
+ 	 /**
+	 * ABOUT
+ 	 */
+
+ 	 .card-icon img{
+		max-width: 100%;
+  		height: auto;
+	}
 
  	/**
 	 * PROJECT
@@ -811,6 +827,7 @@ textarea.input-field {
 
 
  @media (min-width: 768px) {
+
 	/**
 	 * REUSED STYLE
  	 */   
@@ -823,6 +840,9 @@ textarea.input-field {
  	 	--fs-5: 2rem;
  	 }
 
+ 	 .typewriter {
+ 		font-size: 32px;
+ 	}
 
  	 /**
 	 * HEADER
@@ -833,14 +853,14 @@ textarea.input-field {
  	 	font-size: 3vh;
  	 }
 
-
  	 /**
 	 * ABOUT
  	 */
 
- 	 .about .grid-list {
- 	 	grid-template-columns: 1fr 1fr;
- 	 }
+ 	 .card-icon img{
+		max-width: 100%;
+  		height: auto;
+	}
 
  	 /**
 	 * PROJECT
@@ -918,6 +938,10 @@ textarea.input-field {
  	 	max-width: 960px;
  	 }
 
+ 	 .typewriter {
+ 	 	font-size: 29px;
+ 	 }
+
  	 /**
 	 * HEADER
  	 */
@@ -983,119 +1007,16 @@ textarea.input-field {
  	 }
 
  	 .about .grid-list {
- 	 	grid-template-columns: repeat(4, 1fr);
+ 	 	grid-template-columns: repeat(2, 1fr);
  	 }
 
- 	 /**
-	 * PROJECT
- 	 */
- 	 
- 	 .project .grid-list {
- 	 	grid-template-columns: 1fr 1fr;
- 	 	row-gap: 50px;
- 	 }
+ 	 .card-icon img{
+		max-width: 100%;
+  		height: auto;
+	}
 
- 	 .project .grid-list > li:nth-child(-n+2) {
- 	 	grid-column: 1 / 3;
- 	 }
-
- 	 .project-card-1,
- 	 .project-card-2 {
- 	 	flex-direction: row;
- 	 	align-items: flex-end;
- 	 }
-
- 	 :is.project-card-1, .project-card-2) .card-content {
-		width: 33.33%;
-	 }
-
-	 :is.project-card-1, .project-card-2) .card-banner {
-		width: 66.66%;
-	 }  
-
-	 .project-card-1 .card-content {
-	 	padding-block-end: var(--padding);
-	 }
-
-	 .project-card-2 .card-content {
-	 	order: 1;
-	 }
-
-	 /**
-	 * CONTACT
- 	 */
-
- 	 .contact-card {
- 	 	grid-template-columns: 0.8fr 1fr;
- 	 	align-items: center;
- 	 	gap: 90px;
- 	 }
  }
  
-
-/**
- * Responsive for larger than 1400px screen
- */
-
-
- @media (min-width: 1400px) {
-
-
- 	/**
-	 * REUSED STYLE
- 	 */
-
-
- 	 .container,
- 	 .header {
- 	 	max-width: 1320px;
- 	 }
-
- 	 /**
-	 * HEADER 
- 	 */
-
- 	 .logo1 {
-		font-family: Brush Script MT;
-		font-size: var(--fs-3);
-	 }
-
-	 .logo2 {
-		font-size: 25px;
-	 }
-
- 	 /**
-	 * ABOUT 
- 	 */
-
- 	 .about .wrapper {
- 	 	gap: 100px;
- 	 }
-
- 	 .about .grid-list {
- 	 	gap: 60px;
- 	 }
-
- }
-
-  [data-reveal] {
-  	opacity: 0;
-  	transition: transform 1s ease-in-out, opacity 1s ease-in-out;
-  }
-
-  .image {
-  	transform: translateX(-100px);
-  }
-
-  .content > * {
-  	transform: translateX(100px);
-  }
-
-  .revealed {
-  	opacity: 1;
-  	transform: translateX(0);
-  }
-
 
 /**
  * Responsive for larger than 1200px screen
@@ -1134,7 +1055,7 @@ textarea.input-field {
 
 
  	 .about .grid-list {
- 	 	gap: 50px;
+ 	 	gap: 25px;
  	 }
 
 
@@ -1148,6 +1069,74 @@ textarea.input-field {
  	 }
 
  }
+
+
+/**
+ * Responsive for larger than 1400px screen
+ */
+
+
+ @media (min-width: 1400px) {
+
+
+ 	/**
+	 * REUSED STYLE
+ 	 */
+
+
+ 	 .container,
+ 	 .header {
+ 	 	max-width: 1320px;
+ 	 }
+
+ 	 .typewriter {
+ 		font-size: 39px;
+ 	}
+
+ 	 /**
+	 * HEADER 
+ 	 */
+
+ 	 .logo1 {
+		font-family: Brush Script MT;
+		font-size: var(--fs-3);
+	 }
+
+	 .logo2 {
+		font-size: 25px;
+	 }
+
+ 	 /**
+	 * ABOUT 
+ 	 */
+
+ 	 .about .wrapper {
+ 	 	gap: 100px;
+ 	 }
+
+ 	 .about .grid-list {
+ 	 	gap: 50px;
+ 	 }
+
+ }
+
+  [data-reveal] {
+  	opacity: 0;
+  	transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  }
+
+  .image {
+  	transform: translateX(-100px);
+  }
+
+  .content > * {
+  	transform: translateX(100px);
+  }
+
+  .revealed {
+  	opacity: 1;
+  	transform: translateX(0);
+  }
 
 
 
