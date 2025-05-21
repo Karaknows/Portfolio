@@ -189,6 +189,20 @@ body.nav-active {
 	width: 100%;
 }
 
+.logo {
+	display: inherit;
+	gap: 7px;
+}
+
+.logo1 {
+	font-family: Brush Script MT;
+	font-size: var(--fs-1);
+}
+
+.logo2 {
+	font-size: 35px;
+}
+
 .h1,
 .h2,
 .h3,
@@ -410,7 +424,8 @@ body.nav-active {
 }
 
 #hero .image img {
-	width: 60vh;
+	width: 80vh;
+	padding: 50px;
 }
 
 #hero .main-container {
@@ -449,7 +464,7 @@ body.nav-active {
 }
 
 .typewriter span::before {
-	content: "Developer";
+	content: "Hamburger";
 	animation: words 15s infinite;
 }
 
@@ -470,13 +485,13 @@ body.nav-active {
 
 @keyframes words {
 	0%, 33% {
-		content: "ComSci Student";
+		content: "Hamburger";
 	}
 	34%, 66% {
-		content: "Programmer";
+		content: "Supermarket";
 	}
 	67%, 100% {
-		content: "Developer"
+		content: "Drugstore"
 	}
 }
 
@@ -756,6 +771,15 @@ textarea.input-field {
 	 * HEADER
  	 */
 
+ 	 .logo1 {
+		font-family: Brush Script MT;
+		font-size: var(--fs-3);
+	 }
+
+	 .logo2 {
+		font-size: 25px;
+	 }
+
  	 .nav-close-btn {
  	 	color: var(--white);
  	 	font-size: 3vh;
@@ -1028,6 +1052,19 @@ textarea.input-field {
  	 }
 
  	 /**
+	 * HEADER 
+ 	 */
+
+ 	 .logo1 {
+		font-family: Brush Script MT;
+		font-size: var(--fs-3);
+	 }
+
+	 .logo2 {
+		font-size: 25px;
+	 }
+
+ 	 /**
 	 * ABOUT 
  	 */
 
@@ -1078,6 +1115,18 @@ textarea.input-field {
  	 	max-width: 1140px;
  	 }
 
+ 	 /**
+	 * HEADER 
+ 	 */
+
+ 	 .logo1 {
+		font-family: Brush Script MT;
+		font-size: var(--fs-3);
+	 }
+
+	 .logo2 {
+		font-size: 25px;
+	 }
 
  	 /**
 	 * ABOUT 
